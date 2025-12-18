@@ -1,0 +1,10 @@
+path: split_dataset
+
+train: images/train
+val: images/val
+test: images/test
+
+nc: 2
+names:
+  - lantana
+  - parthenium
