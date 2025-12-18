@@ -2,7 +2,7 @@
 
 This folder contains preprocessing and validation utilities used in the
 drone-based weed detection pipeline. These tools ensure annotation
-consistency and quality before model training.
+consistency, dataset integrity, and quality before model training.
 
 ### LabelMe to YOLO Converter
 - Converts polygon annotations from LabelMe JSON format
@@ -17,3 +17,9 @@ consistency and quality before model training.
 - Helps validate annotation accuracy and detect labeling errors
 - Used for dataset quality assurance prior to training
 
+### Dataset Train/Validation/Test Split
+- Splits YOLO-annotated images into train, validation, and test sets
+- Preserves class balance across Lantana and Parthenium samples
+- Maintains YOLO-compatible directory structure for images and labels
+- Skips images without valid annotations
+- Used to prepare clean and balanced datasets before training
