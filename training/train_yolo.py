@@ -12,9 +12,21 @@ model = YOLO("yolov8n.pt")
 
 # Train the model
 model.train(
-    data=r"C:\Users\Admin\Downloads\Dataset29\dataset2.yaml",
+    data="dataset.yaml",
     epochs=50,
-    batch=16,
     imgsz=416,
-    device="cpu"
+    batch=16,
+    device="cpu",
+
+    # Augmentation controls
+    augment=True,      # Enable augmentation (default: True)
+    mosaic=1.0,        # Probability of Mosaic
+    mixup=0.2,         # Probability of MixUp
+    hsv_h=0.015,       # Hue jitter
+    hsv_s=0.7,         # Saturation jitter
+    hsv_v=0.4,         # Value jitter
+    fliplr=0.5,        # Horizontal flip
+    translate=0.1,
+    scale=0.5
 )
+
