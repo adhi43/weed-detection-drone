@@ -9,7 +9,7 @@ image_dir = "Path to the images folder"
 yolo_label_dir = "Path to YOLO labels"
 
 # Define class labels and colors
-class_labels = {0: "lantana", 1: "parthenium",2:'background'}
+class_labels = {0: "lantana", 1: "parthenium",2:"background"}
 class_colors = {0: "red", 1: "blue"}
 
 # Get all image files (modify extensions if needed)
