@@ -1,4 +1,4 @@
-**## Jetson Nano Inference
+### Jetson Nano Inference
 
 This folder contains scripts for running YOLOv8 inference on
 NVIDIA Jetson Nano.
