@@ -1,5 +1,4 @@
-# weed-detection-drone
-Drone-based real-time weed detection and selective spraying using deep learning, YOLO, and edge AI on NVIDIA Jetson.
+
 # Drone-Based Weed Detection and Selective Spraying 🚁🌿
 
 An end-to-end edge-AI system for **real-time weed detection and selective spraying**
@@ -70,16 +69,42 @@ Selective Spraying
 ## Repository Structure
 
 weed-detection-drone/
-├── data_collection/ # Dataset collection utilities
-├── tools/ # Annotation, preprocessing, validation scripts
-├── training/ # YOLO training & fine-tuning scripts
-├── evaluation/ # Model evaluation utilities
-├── inference/ # Jetson Nano inference & DroneKit integration
-├── optimization/ # TensorRT export & optimization scripts
-├── outputs/ # Sample images, videos, logs (demo only)
-├── dataset.yaml # YOLO dataset configuration
-├── README.md
+├── data_collection/        # Scripts for dataset collection (research use)
+│   └── scrape_images.py
+│
+├── tools/                  # Annotation & preprocessing utilities
+│   ├── labelme_to_yolo.py
+│   ├── visualize_yolo_annotations.py
+│   ├── split_dataset.py
+│   ├── preprocess_images.py
+│   └── README.md
+│
+├── training/               # Model training and fine-tuning
+│   ├── train_yolo.py
+│   └── finetune_yolo.py
+│
+├── evaluation/             # Model evaluation and metrics
+│   └── evaluate_yolo.py
+│
+├── inference/              # Deployment & real-time inference
+│   ├── infer_image.py
+│   ├── infer_video.py
+│   ├── jetson_dronekit_infer.py
+│   └── README.md
+│
+├── optimization/           # TensorRT optimization for Jetson
+│   ├── export_tensorrt.sh
+│   └── README.md
+│
+├── outputs/                # Sample outputs (images, videos, logs)
+│   ├── images/
+│   ├── videos/
+│   └── logs/
+│
+├── dataset.yaml            # YOLO dataset configuration
+├── README.md               # Project overview and pipeline
 └── .gitignore
+
 
 
 
