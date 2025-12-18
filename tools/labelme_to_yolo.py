@@ -9,9 +9,10 @@ yolo_dir ="yolo_labels" # Change this to your YOLO output directory
 os.makedirs(yolo_dir, exist_ok=True)
 
 # Define class mapping
-class_mapping = {"lantana": 0,
+class_mapping = {
+    "lantana": 0,
     "parthenium": 1,
-      "background" :2}  # Assign IDs to each class
+    "background" :2}  # Assign IDs to each class
 
 # Process all JSON files in the folder
 json_files = glob.glob(os.path.join(labelme_dir, "*.json"))
