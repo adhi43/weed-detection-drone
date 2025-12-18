@@ -203,11 +203,11 @@ Artifacts are saved automatically under `runs/detect/val/`.
 
 Due to GitHub limitations on video preview:
 
-- Sample detection images are available in `outputs/images/`
-- Full Jetson Nano + DroneKit demo video is hosted externally
+
 
 ▶️ **Demo Video**:  
-*(Add your YouTube / Drive link here)*
+lantana - https://drive.google.com/drive/folders/1mAF7guROvbUGA6PAaTVY89e-JJCryNdG?usp=sharing
+parthenium - https://drive.google.com/drive/folders/1XYsGFoF6a56EdG9odOfs-lNb-xFzzvXN?usp=sharing
 
 ---
 
